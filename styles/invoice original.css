@@ -1,0 +1,93 @@
+/* line 1, sass/invoice original.sass */
+p {
+  color: black;
+  clear: both;
+  display: inline;
+  margin-left: 550px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* line 11, sass/invoice original.sass */
+#invoice {
+  box-sizing: content-box;
+  color: white;
+  height: 20px;
+  letter-spacing: 20px;
+  resize: none;
+  text-align: center;
+  width: 800px;
+  perspective-origin: 400px 15.5px;
+  transform-origin: 400px 15.5px;
+  background: #222222 none repeat scroll 0% 0%/auto padding-box border-box;
+  border: 0px none white;
+  font: normal normal bold normal 15px/normal Helvetica, sans-serif;
+  margin: 20px 200px;
+  outline: white none 0px;
+  overflow: hidden;
+  padding: 8px 0px;
+}
+
+/* line 30, sass/invoice original.sass */
+#edward {
+  box-sizing: content-box;
+  display: block;
+  float: center;
+  height: 70px;
+  resize: none;
+  width: 250px;
+  perspective-origin: 125px 75px;
+  transform-origin: 125px 75px;
+  border: 0px none black;
+  font: normal normal normal normal 14px/normal Georgia, serif;
+  overflow: hidden;
+  padding: 0px;
+  background-color: black;
+  margin-left: 200px;
+  color: white;
+}
+
+/* line 48, sass/invoice original.sass */
+#josh {
+  box-sizing: content-box;
+  display: block;
+  float: center;
+  height: 80px;
+  resize: none;
+  width: 250px;
+  perspective-origin: 125px 75px;
+  transform-origin: 125px 75px;
+  border: 0px none black;
+  font: normal normal normal normal 14px/normal Georgia, serif;
+  overflow: hidden;
+  padding: 0px;
+  background-color: black;
+  margin-left: 750px;
+  margin-top: -70px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* line 68, sass/invoice original.sass */
+#TD_1 {
+  border-collapse: collapse;
+  height: 25px;
+  text-align: left;
+  vertical-align: middle;
+  width: 92px;
+  perspective-origin: 51.5px 18px;
+  transform-origin: 51.5px 18px;
+  background: #eeeeee none repeat scroll 0% 0%/auto padding-box border-box;
+  border: 1px solid black;
+  border-spacing: 2px 2px;
+  font: normal normal normal normal 14px/19.6px Georgia, serif;
+  padding: 5px;
+  margin-left: 500px;
+  background-color: black;
+  color: white;
+}
+
+/* line 86, sass/invoice original.sass */
+textarea {
+  background-color: gray;
+}
