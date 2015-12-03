@@ -4,24 +4,30 @@
   src: url('/styles///fonts/Cabin-Medium-TTF.ttf') format('truetype'), url('/styles///fonts/Cabin-Regular.otf') format('opentype');
 }
 
-/* line 8, sass/invoice.sass */
+/* line 9, sass/invoice.sass */
+#pad {
+  position: relative;
+  top: -12px;
+}
+
+/* line 17, sass/invoice.sass */
 p {
   color: white;
   font: bold 15px Arial, sans-serif;
   text-align: left;
 }
 
-/* line 14, sass/invoice.sass */
+/* line 23, sass/invoice.sass */
 h1 {
   color: black;
   font: 28px Arial;
-  positon: absolute;
+  positon: fixed;
   margin-left: 420px;
   margin-top: 20px;
   clear: both;
 }
 
-/* line 23, sass/invoice.sass */
+/* line 32, sass/invoice.sass */
 #list {
   box-sizing: content-box;
   color: white;
@@ -44,7 +50,7 @@ h1 {
   bottom: 390px;
 }
 
-/* line 47, sass/invoice.sass */
+/* line 56, sass/invoice.sass */
 #invoice {
   box-sizing: content-box;
   color: white;
@@ -67,7 +73,7 @@ h1 {
   bottom: 450px;
 }
 
-/* line 69, sass/invoice.sass */
+/* line 78, sass/invoice.sass */
 #date {
   box-sizing: content-box;
   color: black;
@@ -83,14 +89,14 @@ h1 {
   outline: white none 0px;
   display: block;
   clear: both;
-  position: absolute;
+  position: fixed;
   left: 666px;
   bottom: 634px;
 }
 
-/* line 94, sass/invoice.sass */
+/* line 103, sass/invoice.sass */
 #edward {
-  box-sizing: content-box;
+  box-sizing: border-box;
   height: 110px;
   resize: none;
   width: 175px;
@@ -98,15 +104,16 @@ h1 {
   transform-origin: 125px 75px;
   font: 13px Cabin;
   overflow: hidden;
-  padding: 0px;
+  padding-bottom: 50px;
   background-color: #434343;
   margin-left: 422px;
   color: white;
+  border-collapse: separate;
 }
 
-/* line 110, sass/invoice.sass */
+/* line 119, sass/invoice.sass */
 #josh {
-  box-sizing: content-box;
+  box-sizing: border-box;
   display: block;
   float: center;
   width: 186px;
@@ -124,25 +131,25 @@ h1 {
   color: white;
 }
 
-/* line 129, sass/invoice.sass */
+/* line 138, sass/invoice.sass */
 #container {
-  position: absolute;
+  position: fixed;
   top: 75px;
 }
 
-/* line 133, sass/invoice.sass */
+/* line 142, sass/invoice.sass */
 #container2 {
-  position: absolute;
+  position: fixed;
   bottom: -16px;
   left: 30px;
 }
 
-/* line 141, sass/invoice.sass */
+/* line 150, sass/invoice.sass */
 textarea {
   background-color: gray;
 }
 
-/* line 146, sass/invoice.sass */
+/* line 155, sass/invoice.sass */
 th th {
   width: 400px;
   height: 22px;
@@ -159,14 +166,14 @@ th th {
   font: 15px Arial;
 }
 
-/* line 165, sass/invoice.sass */
+/* line 174, sass/invoice.sass */
 #box_container {
-  position: absolute;
+  position: fixed;
   bottom: 210px;
   left: 40px;
 }
 
-/* line 171, sass/invoice.sass */
+/* line 180, sass/invoice.sass */
 #col_1 {
   width: 375px;
   height: 22px;
@@ -183,7 +190,7 @@ th th {
   font: 12px Arial;
 }
 
-/* line 188, sass/invoice.sass */
+/* line 197, sass/invoice.sass */
 #col_2 {
   width: 375px;
   height: 22px;
@@ -200,7 +207,7 @@ th th {
   font: 15px Arial;
 }
 
-/* line 204, sass/invoice.sass */
+/* line 213, sass/invoice.sass */
 #col_3 {
   width: 375px;
   height: 22px;
@@ -217,7 +224,7 @@ th th {
   font: 15px Arial;
 }
 
-/* line 221, sass/invoice.sass */
+/* line 230, sass/invoice.sass */
 #col_4 {
   width: 375px;
   height: 22px;
@@ -234,7 +241,7 @@ th th {
   font: 15px Arial;
 }
 
-/* line 238, sass/invoice.sass */
+/* line 247, sass/invoice.sass */
 #col_5 {
   width: 375px;
   height: 153px;
@@ -251,7 +258,7 @@ th th {
   font: 15px Arial;
 }
 
-/* line 255, sass/invoice.sass */
+/* line 264, sass/invoice.sass */
 #dis_1 {
   width: 75px;
   height: 22px;
@@ -270,7 +277,7 @@ th th {
   display: table-cell;
 }
 
-/* line 273, sass/invoice.sass */
+/* line 282, sass/invoice.sass */
 #dis_2 {
   width: 75px;
   height: 22px;
@@ -289,7 +296,7 @@ th th {
   display: table-cell;
 }
 
-/* line 291, sass/invoice.sass */
+/* line 300, sass/invoice.sass */
 #dis_3 {
   width: 75px;
   height: 22px;
@@ -308,7 +315,7 @@ th th {
   display: table-cell;
 }
 
-/* line 310, sass/invoice.sass */
+/* line 319, sass/invoice.sass */
 #dis_4 {
   width: 75px;
   height: 22px;
@@ -327,7 +334,7 @@ th th {
   display: table-cell;
 }
 
-/* line 329, sass/invoice.sass */
+/* line 338, sass/invoice.sass */
 #dis_5 {
   width: 75px;
   height: 31px;
@@ -346,7 +353,7 @@ th th {
   display: table-cell;
 }
 
-/* line 348, sass/invoice.sass */
+/* line 357, sass/invoice.sass */
 #dis_6 {
   width: 75px;
   height: 31px;
@@ -365,7 +372,7 @@ th th {
   display: table-cell;
 }
 
-/* line 367, sass/invoice.sass */
+/* line 376, sass/invoice.sass */
 #dis_7 {
   width: 75px;
   height: 31px;
@@ -384,7 +391,7 @@ th th {
   display: table-cell;
 }
 
-/* line 385, sass/invoice.sass */
+/* line 394, sass/invoice.sass */
 #dis_8 {
   width: 75px;
   height: 31px;
