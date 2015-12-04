@@ -4,423 +4,167 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin)
 
 
+.container
+    width: 400px
+    margin: 0 auto
 
+.content-left
+    // To positing a <div> left
+    float: left
+    width: 50%
 
-#pad
-   
-    
-    position: relative
-    top: -12px
+.content-right
+    // To positing a <div> right
+    float: left
+    width: 50%
 
- 
-
-p
-    color: white
-    font: bold 15px  Arial, sans-serif
+.align-left
+    // For <div> containing text to align
     text-align: left
-    
 
-h1
+.align-right
+    // For <div> containing text to align
+    text-align: right
+
+.text-left
+    // For <span> elements
+    display: inline-block
+    float: left
+
+.text-right
+    // For <span> elements
+    display: inline-block
+    float: right
+
+h1.invoice-text
     color: black
-    font: 28px Arial 
-    positon: fixed
-    margin-left: 420px
+    font: 28px Arial
     margin-top: 20px
-    clear: both
 
-
-#list 
+#date
     box-sizing: content-box
-    color: rgb(255, 255, 255)
-    height: 20px
-    resize: none
-    text-align: left
-    width: 397px
-    perspective-origin: 400px 15px
-    transform-origin: 400px 15px
-    background-color: rgb(67,67,67)
-    border: 0px none rgb(255, 255, 255)
-    font:  15px  Arial, sans-serif
-    outline: rgb(255, 255, 255) none 0px
-    padding: 8px 0px
-    display: block
-    clear: both
-    float: bottom
-    position: absolute
-    left: 400px
-    bottom: 390px    
-
-
-
-
-#invoice 
-    box-sizing: content-box
-    color: rgb(255, 255, 255)
-    height: 20px
-    resize: none
-    text-align: center
-    width: 397px
-    perspective-origin: 400px 15px
-    transform-origin: 400px 15px
-    background-color: rgb(67,67,67)
-    border: 0px none rgb(255, 255, 255)
-    font:  15px  Arial, sans-serif
-    outline: rgb(255, 255, 255) none 0px
-    padding: 8px 0px
-    display: block
-    clear: both
-    float: bottom
-    position: absolute
-    left: 400px
-    bottom: 450px
-
-
-#date 
-    box-sizing: content-box
-    color: black 
-    height: 25px
-    resize: none
-    text-align: center
-    width: 160px
-    perspective-origin: 400px 15px
-    transform-origin: 400px 15px
+    color: black
     background-color: rgb(218, 218, 219)
-    border: 0px none rgb(255, 255, 255)
     font:  20px  Arial, sans-serif
-    outline: rgb(255, 255, 255) none 0px
- 
-    display: block
-    clear: both
-    
-    position: fixed
-    left: 666px
-    bottom: 634px
-   
+    display: inline-block
+    margin-top: 20px
+    padding: 3px
 
-
-
-
-#edward 
-    box-sizing: border-box
-    height: 110px
-    resize: none
-    width: 175px
-    perspective-origin: 125px 75px
-    transform-origin: 125px 75px
-    font: 13px Cabin
-    overflow: hidden
-    padding-bottom: 50px
-    background-color: rgb(67,67,67)
-    margin-left: 422px
-    color: white
-    border-collapse: separate
-
-
-#josh 
-    box-sizing: border-box
-    display: block
-    float: center
-    width:  186px
-    height: 110px
-    resize: none
-    perspective-origin: 125px 75px
-    transform-origin: 125px 75px
-    font: 13px Cabin
-    overflow: hidden
-    padding: 0px
-    background-color: rgb(67,67,67)
-    margin-left: 632px
-    margin-top: -157px
-    margin-bottom: 40px
-    color: white
-
-
-#container 
-    position: fixed
+#contacts
     top: 75px
 
-#container2 
-    position: fixed
-    bottom: -16px
-    left: 30px 
+#bill-to, #payments-to
+    box-sizing: border-box
+    background-color: rgb(67,67,67)
+    color: white
+    font: 13px Cabin
+    padding: 10px 12px
+    min-height: 110px
+    p
+        margin-top: 0
+        margin-bottom: 5px
+        font: bold 15px  Arial, sans-serif
 
+#bill-to
+    margin-right: 10px
 
+#payments-to
+    margin-left: 10px
 
+#invoice-terms
+    box-sizing: border-box
+    margin-top: 20px
+    height: 36px
+    padding: 8px 12px
+    background-color: rgb(67,67,67)
+    color: rgb(255, 255, 255)
+    font:  15px  Arial, sans-serif
 
-textarea
-    background-color: gray
+#table-header
+    box-sizing: border-box
+    margin-top: 20px
+    height: 36px
+    padding: 8px 12px
+    background-color: rgb(67,67,67)
+    color: rgb(255, 255, 255)
+    font:  15px  Arial, sans-serif
 
+#box-container
+    position: relative
+    height: 255px
 
-
-th th
-    
-    width: 400px
-    height: 22px
-    margin-left: 390px
-    margin-bottom: -60px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
+.cell
     position: absolute
-    bottom: 200px
-    font: 15px Arial    
-
-
-
-
-#box_container
-    position: fixed
-    bottom: 210px
-    left: 40px
-
-
-#col_1
-    
-    width: 375px
-    height: 22px
-    margin-left: 390px
-    margin-bottom: -60px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
+    height: 14px
+    // 4px vertically centers the text:
+    padding: 4px 12px
+    border: solid 1px black
     font: 12px Arial
-
+    &.description
+        width: 374px
+        left: 0
+        text-align: left
+    &.amount
+        width: 78px
+        right: 0px
+        text-align: right
+#col_1
+    top: 0
 
 #col_2
-    
-    width: 375px
-    height: 22px
-    margin-left: 390px
-    margin-bottom: -83px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 15px Arial 
+    top: 23px
 
 #col_3
-    
-    width: 375px
-    height: 22px
-    margin-left: 390px
-    margin-bottom: -106px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 15px Arial 
-
+    top: 46px
 
 #col_4
-    
-    width: 375px
-    height: 22px
-    margin-left: 390px
-    margin-bottom: -129px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 15px Arial 
-
+    top: 69px
 
 #col_5
-    
-    width: 375px
     height: 153px
-    margin-left: 390px
-    margin-bottom: -283px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 15px Arial     
-
+    top: 92px
 
 #dis_1
-    
-    width: 75px
-    height: 22px
-    margin-left: 690px
-    margin-bottom: -60px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 12px Arial
-    text-align: right
-    display: table-cell    
+    top: 0
 
 #dis_2
-    
-    width: 75px
-    height: 22px
-    margin-left: 690px
-    margin-bottom: -83px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 15px Arial
-    text-align: right
-    display: table-cell   
+    top: 23px
 
 #dis_3
-    
-    width: 75px
-    height: 22px
-    margin-left: 690px
-    margin-bottom: -106px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 15px Arial
-    text-align: right
-    display: table-cell 
-
+    top: 46px
 
 #dis_4
-    
-    width: 75px
-    height: 22px
-    margin-left: 690px
-    margin-bottom: -129px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
+    top: 69px
+
+#credit-text, #total-text, #credit-amount, #total-amount
+    width: 86px
+    height: 23px
+    // 8px for vertically aligning text
+    padding-top: 8px
     position: absolute
-    bottom: 200px
-    font: 15px Arial
-    text-align: right
-    display: table-cell 
+    border: solid 1px black
 
-
-#dis_5
-    
-    width: 75px
-    height: 31px
-    margin-left: 690px
-    margin-bottom: -283px
-    background-color: white
-    color: black
-    text-align: bottom
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 10px Arial
-    text-align: right
-    display: table-cell  
-
-
-#dis_6
-    
-    width: 75px
-    height: 31px
-    margin-left: 690px
-    margin-bottom: -251px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 8px Arial
-    text-align: right
-    display: table-cell            
-
-
-#dis_7
-    
-    width: 75px
-    height: 31px
-    margin-left: 594px
-    margin-bottom: -251px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
+#credit-text, #total-text
+    padding-left: 12px
     font: 11px Arial
-    text-align: center
-    display: table-cell   
 
-#dis_8
-    
-    width: 75px
-    height: 31px
-    margin-left: 594px
-    margin-bottom: -283px
-    background-color: white
-    color: black
-    text-align: left
-    padding-left: 20px
-    border: solid 1px black 
-    float: none 
-    position: absolute
-    bottom: 200px
-    font: 11px Arial
-    text-align: center
-    display: table-cell      
+#credit-amount, #total-amount
+    text-align: right
+    padding-right: 12px
+    font: 12px Arial
 
-    
+#credit-text
+    bottom: 32px
+    right: 99px
 
+#total-text
+    bottom: 0
+    right: 99px
 
+#credit-amount
+    bottom: 32px
+    right: 0
 
-
-
-
-
-
-
-
-
-
-
-
+#total-amount
+    bottom: 0
+    right: 0

@@ -12,92 +12,76 @@
 
         <link rel="stylesheet" href="styles/invoice.css">
 
-    
     </head>
     <body>
-        <h1> INVOICE </h1>
+        <div class="container">
+            <div class="content-left">
+                <h1 class="invoice-text"> INVOICE </h1>
+            </div>
+            <div class="content-right align-right">
+                <span id="date"> Date: 11-16-2015 </span>
+            </div>
+            <br style="clear: both;">
+        </div>
 
-        <div id="date"> Date: 11-16-2015 </div>
 
-        
-        <div id="container">
-
-            <div id="edward">
-            <p> &nbsp &nbsp BILL TO</p>
-
-                <div id="pad"> &nbsp &nbsp &nbsp Josh Wedekind
-                <br>
-                 &nbsp &nbsp &nbsp 750 Arrowcreek Pkwy 
-                <br>
-                 &nbsp &nbsp &nbsp Apt 5205 
-                <br>
-                &nbsp &nbsp &nbsp Reno, NV 89511 
-                
-                
+        <div id="contacts" class="container">
+            <div class="content-left">
+                <div id="bill-to">
+                    <p>BILL TO</p>
+                    Josh Wedekind
+                    <br>
+                    750 Arrowcreek Pkwy
+                    <br>
+                    Apt 5205
+                    <br>
+                    Reno, NV 89511
                 </div>
-            </div>    
-          
-        
-
-            <p>Bill to:</p>
-            <div id="josh">
-            <p>&nbsp &nbsp PAYMENTS TO</p>
-            &nbsp &nbsp &nbsp Edward Koch
-            <br>
-           &nbsp &nbsp &nbsp 4180 Rio Poco Rd.
-            <br>
-            &nbsp &nbsp &nbsp Reno, NV 89502 
-            <br>
-            
-            <br>              
-            e-mail:josh@halfnibble.com
             </div>
 
+            <div class="content-right">
+                <div id="payments-to">
+                    <p>PAYMENTS TO</p>
+                    Edward Koch
+                    <br>
+                    4180 Rio Poco Rd.
+                    <br>
+                    Reno, NV 89502
+                    <br>
+                </div>
+            </div>
+            <br style="clear:both;">
         </div>
 
-
-
-       
-
-
-
-    <div id="main_container">
-
-        <div id="container2">
-
-            <div id="invoice">Payment Term: NET 15 &nbsp &nbsp &nbsp  Payment Due: 12-7-2015</div>
-
-            <div id="list">&nbsp &nbsp LINE ITEMS </div>
-
+        <div id="invoice-terms" class="container">
+            <span class="text-left">Payment Term: NET 15</span>
+            <span class="text-right">Payment Due: 12-7-2015</span>
         </div>
-       
-        <div id="box_container">
-            <div id="col_1">Web Development</div>
-            <div id="col_2"></div>
-            <div id="col_3"></div>
-            <div id="col_4"></div>
-            <div id="col_5"></div>
-        
 
-            <div id="dis_1">$780.00</div>
-            <div id="dis_2"></div>
-            <div id="dis_3"></div>
-            <div id="dis_4"></div>
-            <div id="dis_5">$780.00</div>
-            <div id="dis_6"></div>
-            <div id="dis_7">CREDITS</div>
-            <div id="dis_8">TOTAL</div>
-        </div>    
+        <div class="container">
+            <div id="table-header">LINE ITEMS </div>
+            <div id="box-container">
+                <!-- Line item rows -->
+                <div id="col_1" class="cell description">Web Development</div>
+                <div id="col_2" class="cell description"></div>
+                <div id="col_3" class="cell description"></div>
+                <div id="col_4" class="cell description"></div>
+                <!-- Spacer-->
+                <div id="col_5" class="cell description"></div>
 
-    </div>  
-
-
-
-        
-
-
+                <!-- Line item cost rows -->
+                <div id="dis_1" class="cell amount">$780.00</div>
+                <div id="dis_2" class="cell amount"></div>
+                <div id="dis_3" class="cell amount"></div>
+                <div id="dis_4" class="cell amount"></div>
+                <!-- Credits & Totals section -->
+                <div id="credit-text">CREDITS</div>
+                <div id="total-text">TOTAL</div>
+                <div id="credit-amount">($ 0.00)</div>
+                <div id="total-amount">$ 780.00</div>
+            </div>
+        </div>
+        <br><br>
 
     </body>
-
 </html>
-
