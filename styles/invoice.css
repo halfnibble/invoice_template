@@ -121,114 +121,63 @@ h1.invoice-text {
 }
 
 /* line 96, sass/invoice.sass */
-.cell {
-  position: absolute;
+table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* line 100, sass/invoice.sass */
+td {
+  width: 33%;
   height: 14px;
   padding: 4px 12px;
-  border: solid 1px black;
+  border: 1px solid black;
+  border-top: 0;
+  border-left: 0;
   font: 12px Arial;
 }
-/* line 103, sass/invoice.sass */
-.cell.description {
-  width: 374px;
-  left: 0;
+/* line 109, sass/invoice.sass */
+td.description {
   text-align: left;
 }
-/* line 107, sass/invoice.sass */
-.cell.amount {
-  width: 78px;
-  right: 0px;
+/* line 111, sass/invoice.sass */
+td.amount {
   text-align: right;
 }
-
-/* line 111, sass/invoice.sass */
-#col_1 {
-  top: 0;
+/* line 113, sass/invoice.sass */
+td:first-child {
+  border-left: 1px solid black;
+}
+/* line 115, sass/invoice.sass */
+td.spacer {
+  height: 60px;
+  border-bottom: 0;
+}
+/* line 118, sass/invoice.sass */
+td.left-spacer {
+  border-bottom: 0;
 }
 
-/* line 114, sass/invoice.sass */
-#col_2 {
-  top: 23px;
-}
-
-/* line 117, sass/invoice.sass */
-#col_3 {
-  top: 46px;
-}
-
-/* line 120, sass/invoice.sass */
-#col_4 {
-  top: 69px;
-}
-
-/* line 123, sass/invoice.sass */
-#col_5 {
-  height: 153px;
-  top: 92px;
-}
-
-/* line 127, sass/invoice.sass */
-#dis_1 {
-  top: 0;
-}
-
-/* line 130, sass/invoice.sass */
-#dis_2 {
-  top: 23px;
-}
-
-/* line 133, sass/invoice.sass */
-#dis_3 {
-  top: 46px;
-}
-
-/* line 136, sass/invoice.sass */
-#dis_4 {
-  top: 69px;
-}
-
-/* line 139, sass/invoice.sass */
-#credit-text, #total-text, #credit-amount, #total-amount {
-  width: 86px;
+/* line 121, sass/invoice.sass */
+.credit-total-text, .credit-total-amount {
   height: 23px;
   padding-top: 8px;
-  position: absolute;
-  border: solid 1px black;
 }
 
-/* line 147, sass/invoice.sass */
-#credit-text, #total-text {
+/* line 126, sass/invoice.sass */
+#credit-text, #credit-amount {
+  border-top: solid 1px black;
+}
+
+/* line 129, sass/invoice.sass */
+.credit-total-text {
   padding-left: 12px;
   font: 11px Arial;
 }
 
-/* line 151, sass/invoice.sass */
-#credit-amount, #total-amount {
+/* line 133, sass/invoice.sass */
+.credit-total-amount {
   text-align: right;
   padding-right: 12px;
   font: 12px Arial;
-}
-
-/* line 156, sass/invoice.sass */
-#credit-text {
-  bottom: 32px;
-  right: 99px;
-}
-
-/* line 160, sass/invoice.sass */
-#total-text {
-  bottom: 0;
-  right: 99px;
-}
-
-/* line 164, sass/invoice.sass */
-#credit-amount {
-  bottom: 32px;
-  right: 0;
-}
-
-/* line 168, sass/invoice.sass */
-#total-amount {
-  bottom: 0;
-  right: 0;
 }
